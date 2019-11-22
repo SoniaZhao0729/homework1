@@ -17,7 +17,8 @@ def get_html(url, code="utf-8"):
 
 
 def main(name):
-    search_name_url = "http://www.baidu.com/s?wd=" + name
+    search_name_url = "http://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=" + name
+
 
     doc = pq(get_html(search_name_url))
 
